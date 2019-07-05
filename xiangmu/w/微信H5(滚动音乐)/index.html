@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 75px;"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,user-scalable=no">
+    <title>音乐知识</title>
+    <!-- <link rel="prefetch" href="./imgs/henan.mp3"> -->
+    <!-- <link rel="prefetch" href="./imgs/bgm.mp3"> -->
+    <link rel="stylesheet" href="scripts/style.css">
+    <link rel="stylesheet" href="scripts/swiper.min.css">
+    <link rel="stylesheet" href="scripts/cssShake.css">
+</head>
+<body style="">
+    <div class="wrap">
+        <!-- <audio src="./imgs/bgm.mp3" preload="auto" id="bgm" loop=""></audio> -->
+        <div class="music-icon closeState" id="music-icon" style="right: 15px;"></div>
+
+        <div id="mainSwiper" class="swiper-container swiper-container-initialized swiper-container-horizontal" style="display: block;">
+            <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="swiper-slide swiper-no-swiping page swiper-slide-active" style="width: 750px;">
+
+                    <img src="./imgs/poster/poster_title.png" class="acs shake shake-constant" id="title">
+                    <img src="./imgs/poster/poster_danmu.png" class="acs move" id="danmu">
+
+                    <img src="./imgs/poster/poster_icons.png" class="acs pos">
+
+                    <img src="./imgs/poster/poster_btn.png" class="acs" id="start" style="display: inline;">
+                </div>
+                <!--1-->
+                <div class="swiper-slide swiper-no-swiping page question swiper-slide-next" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第一题
+                        </div>
+
+                        <div class="question-content">
+                            以下哪一句会是你写的四川旅游攻略标题？
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <img src="imgs/question/q1.png" alt="">
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="3">干货+多图！成都、九黄、峨乐……安逸走四川！</li>
+                            <li class="answer" data-score="5">易红易热搜！7天玩遍“有颜有味”的天府之国</li>
+                            <li class="answer" data-score="1">盘熊猫、吃火锅、逛天府绿道，用最悠闲的方式打卡四川！</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--2-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第二题
+                        </div>
+
+                        <div class="question-content">
+                            当你到贵州，听到有人说“我想静静”，他会_____
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <img src="imgs/question/q2.png" alt="">
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="1">带上耳机</li>
+                            <li class="answer" data-score="5">放下手机，到FAST静默区仰望星空</li>
+                            <li class="answer" data-score="3">去苗寨找静静一起吃酸汤鱼</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第三题
+                        </div>
+
+                        <div class="question-content">
+                            “中！”在河南，这句话表达的意思是_____
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <img src="imgs/question/q3.png" alt="">
+                                <div id="play">
+                                    <!-- <audio src="imgs/henan.mp3" id="audio"></audio> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="5">这里是中原，有天地之中历史建筑群</li>
+                            <li class="answer" data-score="3">河南人推崇“中庸之道”</li>
+                            <li class="answer" data-score="1">行，当然可以！</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--4-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第四题
+                        </div>
+
+                        <div class="question-content">
+                            湖北哪里最适合练功夫？
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <img src="imgs/question/q4.png" alt="">
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="5">“北少林，南武当”，武当山走起</li>
+                            <li class="answer" data-score="1">“学好数理化，走遍天下都不怕”，在家学习最适合</li>
+                            <li class="answer" data-score="3">就近取材，去公园跟爷爷学太极</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--5-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第五题
+                        </div>
+
+                        <div class="question-content">
+                            旅行中你最能hold住全场的技能是？
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <img src="imgs/question/q5.png" alt="">
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="5">不差钱算不算</li>
+                            <li class="answer" data-score="3">没有攻略不了的城，没有热不了的场</li>
+                            <li class="answer" data-score="1">拍人一米八，拍景美如画</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--6-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第六题
+                        </div>
+
+                        <div class="question-content">
+                            说到“宁夏”，你会……
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <div class="pic-scroll">
+                                    <div id="swiper06" class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                                        <div class="swiper-wrapper" style="transform: translate3d(-1440px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 480px;">
+                                                <img src="imgs/question/q6_03.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 480px;">
+                                                <img src="imgs/question/q6_01.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 480px;">
+                                                <img src="imgs/question/q6_02.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 480px;">
+                                                <img src="imgs/question/q6_03.png" alt="">
+                                            </div>
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 480px;">
+                                                <img src="imgs/question/q6_01.png" alt="">
+                                            </div></div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="1">快把我的麦拿来呀！一起唱~</li>
+                            <li class="answer" data-score="3">这不是《天龙八部》中遇见梦姑的地方吗</li>
+                            <li class="answer" data-score="5">忽然想去贺兰山脚下喝杯葡萄酒</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--7-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第七题
+                        </div>
+
+                        <div class="question-content">
+                            如果一天“自由行”，在江西你会？
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <div class="pic-scroll">
+                                    <div id="swiper07" class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                                        <div class="swiper-wrapper" style="transform: translate3d(-1440px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 480px;">
+                                                <img src="imgs/question/q7_03.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 480px;">
+                                                <img src="imgs/question/q7_01.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 480px;">
+                                                <img src="imgs/question/q7_02.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 480px;">
+                                                <img src="imgs/question/q7_03.png" alt="">
+                                            </div>
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 480px;">
+                                                <img src="imgs/question/q7_01.png" alt="">
+                                            </div></div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="5">不忘初心，去井冈山感受“星星之火”</li>
+                            <li class="answer" data-score="3">去识一识庐山的真面目</li>
+                            <li class="answer" data-score="1">拍婺源的油菜花，做票圈最靓的崽</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--8-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第八题
+                        </div>
+
+                        <div class="question-content">
+                            在北京，如何燃烧你的卡路里？
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <img src="imgs/question/q8.png" alt="">
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="5">骑共享单车绕故宫一圈</li>
+                            <li class="answer" data-score="1">约上要减肥的小伙伴，去吃顿铜火锅</li>
+                            <li class="answer" data-score="3">从望京走到王府井买糯米冰糖葫芦</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--9-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第九题
+                        </div>
+
+                        <div class="question-content">
+                            来山东，吃土少年少女们必须打卡的5A景区是？
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <div class="pic-scroll">
+                                    <div id="swiper09" class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                                        <div class="swiper-wrapper" style="transform: translate3d(-1440px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 480px;">
+                                                <img src="imgs/question/q9_03.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 480px;">
+                                                <img src="imgs/question/q9_01.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="1" style="width: 480px;">
+                                                <img src="imgs/question/q9_02.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="2" style="width: 480px;">
+                                                <img src="imgs/question/q9_03.png" alt="">
+                                            </div>
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 480px;">
+                                                <img src="imgs/question/q9_01.png" alt="">
+                                            </div></div>
+                                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="0">泰山</li>
+                            <li class="answer" data-score="5">青州古城</li>
+                            <li class="answer" data-score="3">大明湖</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--10-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第十题
+                        </div>
+
+                        <div class="question-content">
+                            天雨流芳、风花雪月、春城花都，说的是云南哪三个地方？
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <img src="imgs/question/q10.png" alt="">
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="5">丽江、大理、昆明</li>
+                            <li class="answer" data-score="0">玉溪、丽江、香格里拉</li>
+                            <li class="answer" data-score="0">西双版纳、大理、昆明</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+                <!--11-->
+                <div class="swiper-slide swiper-no-swiping page question" style="width: 750px;">
+                    <div class="question-box">
+                        <div class="question-index">
+                            第十一题
+                        </div>
+
+                        <div class="question-content">
+                            你认为去湖南玩最正确的打开方式是？
+                        </div>
+
+                        <div class="pic-box">
+                            <div class="pic-box-inner">
+                                <img src="imgs/question/q11.png" alt="">
+                            </div>
+                        </div>
+
+                        <ul class="answer-box">
+                            <li class="answer" data-score="1">去现场看一次快乐大本营 </li>
+                            <li class="answer" data-score="3">挑战张家界的网红玻璃栈道</li>
+                            <li class="answer" data-score="5">打卡“洞庭天下水，岳阳天下楼”</li>
+                        </ul>
+
+                        <div class="next-btn"></div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide swiper-no-swiping page" style="width: 750px;">
+                    <img src="" id="result">
+                    <img src="imgs/result/restart.png" id="restart">
+                    <img src="imgs/result/link.png" id="link">
+                    <a href="https://cbgc.scol.com.cn/news/123302" id="link_a"></a>
+                    <img src="imgs/result/share.png" id="share">
+
+                    <img src="imgs/result/arrow.png" id="arrow" style="top: 6.5rem" alt="">
+                    
+                </div>
+
+                <div class="swiper-slide swiper-no-swiping page" id="logos" style="width: 750px;">
+                    <img src="imgs/logos/beijng.jpg" alt="">
+                    <img src="imgs/logos/changjiangyun.jpg" alt="">
+                    <img src="imgs/logos/chuanguan.jpg" alt="">
+                    <img src="imgs/logos/dazhong.jpg" alt="">
+                    <img src="imgs/logos/henan.jpg" alt="">
+                    <img src="imgs/logos/hongwang.jpg" alt="">
+                    <img src="imgs/logos/jiangxi.jpg" alt="">
+                    <img src="imgs/logos/ningxia.jpg" alt="">
+                    <img src="imgs/logos/tianyan.jpg" alt="">
+                    <img src="imgs/logos/yunbao.jpg" alt="">
+                    <img src="imgs/logos/back.png" id="back">
+                </div>
+
+
+            </div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        <div class="modal" id="shareModal">
+            <div class="modal-inner">
+                <img src="" id="shareImg">
+                <span>长按保存图片</span>
+                <img src="imgs/closeWhite.png" id="close">
+            </div>
+        </div>
+        <div class="modal" id="loading" style="display: none;">
+            <div class="modal-inner">100%</div>
+        </div>
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+		(function(){
+			var ua = window.navigator.userAgent.toLowerCase();
+			if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+				var wxtag = document.createElement('script');
+				var sctag = document.createElement('script');
+				wxtag.src = '//res.wx.qq.com/open/js/jweixin-1.2.0.js';
+				$(wxtag).ready((function () {
+					sctag.src = 'scripts/wx_share.js?t=1';
+					document.body.appendChild(wxtag);
+					document.body.appendChild(sctag);
+				}))
+			}
+		})();
+    </script>
+
+</body></html>
